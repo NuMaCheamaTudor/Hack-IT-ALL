@@ -10,13 +10,7 @@ jobs:
       fail-fast: false
       matrix:
         targetPlatform:
-          - StandaloneOSX # INTEL 64 pt MAC
-          - StandaloneWindows  #Windows normawl
           - StandaloneWindows64 #windows 64 bit
-          - StandaloneLinux64
-          - iOS 
-          - Android 
-          - WebGL 
     steps:
       - uses: actions/checkout@v4
         with:
