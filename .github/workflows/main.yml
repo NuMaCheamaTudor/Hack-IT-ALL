@@ -36,7 +36,8 @@ jobs:
           targetPlatform: ${{ matrix.targetPlatform }}
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@8d9c8a01d6d349a4f631fd9ec4bafbd72a3961c3 # SHA stabil pentru v3
+   - uses: actions/upload-artifact@v3
+
         with:
           name: Build-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
