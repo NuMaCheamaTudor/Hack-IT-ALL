@@ -38,7 +38,7 @@ jobs:
       - name: List build output
         run: ls -la build/${{ matrix.targetPlatform }}
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v2
         with:
           name: Build-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
