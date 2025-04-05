@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 088043ca9412ec749980f62d4921e6a8
+  productGUID: d71df68a715f67c418326767f87660bc
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -877,12 +877,12 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 0
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: cc00d47e-bec6-498c-9eb8-2ef24a511ab9
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: HACK IT ALL
+  projectName: 
   organizationId: tudor723
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
