@@ -1,6 +1,6 @@
 name: Build project
 
-on: [push, pull_request]
+on: push
 
 jobs:
   buildForAllSupportedPlatforms:
@@ -12,8 +12,6 @@ jobs:
         targetPlatform:
 
           - StandaloneWindows64 # Build a Windows 64-bit standalone.
-       
-          - WebGL # WebGL.
     steps:
       - uses: actions/checkout@v4
         with:
@@ -33,7 +31,7 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: Build-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
